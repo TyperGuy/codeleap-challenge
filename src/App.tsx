@@ -1,12 +1,23 @@
 import './App.css';
-import Input from './components/input/Input';
+import {  InputType, ButtonType } from 'customTypes';
+import Textarea from './components/inputs/Textarea';
+import Button from './components/button/Button';
 
+const InputProps :  InputType ={
+  label:"Some thing", 
+  placeholder : "Another Some Thing"
+}
 
+const ButtonProps : ButtonType ={
+  text : "Qualquer Coisa",
+  variant : "outlined"
+}
 
 function App() {
   return (
     <div className="App">
-      <Input/>
+      <Textarea input={InputProps} />
+      <Button button={ButtonProps}/>
     </div>
   );
 }
