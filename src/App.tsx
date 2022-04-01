@@ -1,9 +1,13 @@
 import './App.css';
+import Input from './components/input/Input';
+
 
 
 function App() {
   return (
-    <div className="App" />
+    <div className="App">
+      <Input/>
+    </div>
   );
 }
 
