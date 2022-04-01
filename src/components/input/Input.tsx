@@ -1,10 +1,10 @@
-import {InputField,Label,Container} from './Input.styles';
+import {InputField,Label,Container,Textarea} from './Input.styles';
 
 function CustomInput() {
   return (
     <Container>
       <Label>Meu Label</Label>
-      <InputField placeholder="some thing like this" type="text" name="text"/>
+      <Textarea placeholder="Describe yourself here" name="text"/>
     </Container>
   );
 }

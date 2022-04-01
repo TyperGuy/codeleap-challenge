@@ -24,4 +24,19 @@ export const InputField = styled.input`
   font-size: 14px
 `;
 
+export const Textarea = styled.textarea`
+  width: 659px;
+  height: 74px;
+  background: #FFFFFF;
+  border: 1px solid #777777;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: .5em;
+  padding-top:.5rem;
+  font-weight: 400;
+  font-size: 14px;
+  resize: none;
+`;
+
+
 
