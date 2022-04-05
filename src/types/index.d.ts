@@ -3,6 +3,13 @@ declare module 'customTypes' {
     label: string,
     placeholder: string
   };
+  type FlexType = {
+    justify: string,
+    dir: string,
+    align : string,
+    bg:string,
+    height: string
+  };
 
   type ButtonType = {
     text : string,
@@ -16,6 +23,10 @@ declare module 'customTypes' {
   interface ButtonProps {
     button: ButtonTypes
   };
+  interface FlexProps {
+    Flex : FlexType
+  };
+
 
 }
 
@@ -23,5 +34,7 @@ module.exports = {
   InputType,
   InputProps,
   ButtonType,
-  ButtonProps
+  ButtonProps,
+  FlexType,
+  FlexProps
 };

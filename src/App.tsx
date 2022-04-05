@@ -1,24 +1,14 @@
 import './App.css';
-import {  InputType, ButtonType } from 'customTypes';
-import Textarea from './components/inputs/Textarea';
-import Button from './components/button/Button';
+import LoginPage from './pages/login/Login';
 
-const InputProps :  InputType ={
-  label:"Some thing", 
-  placeholder : "Another Some Thing"
-}
-
-const ButtonProps : ButtonType ={
-  text : "Qualquer Coisa",
-  variant : "outlined"
-}
 
 function App() {
   return (
-    <div className="App">
-      <Textarea input={InputProps} />
-      <Button button={ButtonProps}/>
+    <div className='box'>
+      <LoginPage/>
     </div>
+    
+  
   );
 }
 
