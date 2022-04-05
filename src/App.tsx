@@ -1,11 +1,11 @@
 import './App.css';
-import LoginPage from './pages/login/Login';
+import Home from './pages/home/Home';
 
 
 function App() {
   return (
     <div className='box'>
-      <LoginPage/>
+      <Home/>
     </div>
     
   

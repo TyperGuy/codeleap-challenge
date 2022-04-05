@@ -12,7 +12,7 @@ const InputProps :  InputType ={
 const FlexProps : FlexType ={
   justify:"center",
   dir:"column",
-  align : "center",
+  align : "flex-start",
   bg: "#fff",
   height: ""
 } 
