@@ -35,7 +35,11 @@
             "ts": "never",
             "tsx": "never"
             }
-        ]
+        ],
+        "react/function-component-definition":"off",
+        "react/destructuring-assignment": "off",
+        "import/no-unresolved" : "off",
+        "react/jsx-props-no-spreading" : "off"
     },
     "settings": {
         "import/resolver": {
