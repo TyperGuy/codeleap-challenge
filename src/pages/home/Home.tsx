@@ -1,6 +1,7 @@
 import React from "react";
 import Styles from './Home.module.css';
 import Form from "../../components/form/Form";
+import Post from "../../components/post/Post";
 
 const Home:React.FC =()=>
   <div className={Styles.mainContainer}>
@@ -14,7 +15,7 @@ const Home:React.FC =()=>
         <div className={Styles.formaContainer}>
           <Form/>
         </div>
-        <h1>klklklkl</h1>
+        <Post/>
     </div>
 
   </div>
