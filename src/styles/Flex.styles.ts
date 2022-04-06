@@ -26,6 +26,7 @@ const Box = styled.div`
   justify-content: center;
   padding: 2em;
   background-color: #fff;
+  box-sizing: border-box;
 `;
 const LoginBox = styled.div`
   background-color: #fff;
