@@ -18,19 +18,16 @@ const FlexProps: FlexType = {
 }
 
 export default function Form() {
-    const [disable, setDisable] = useState(true)
     const [taIsEmpty, settaIsEmpty] = useState(true)
     const [tfIsEmpty, settfIsEmpty] = useState(true)
 
     const ButtonProps: ButtonType = {
         text: 'Entrar',
         variant: '',
-        disabled: disable,
+        disabled:!(taIsEmpty&&tfIsEmpty),
     }
 
-    useEffect(() => {
-        setDisable(false)
-    })
+    
 
     return (
         <Box>
@@ -39,7 +36,7 @@ export default function Form() {
                 <Flex>
                     <Label>Title</Label>
                     <InputField
-                        onChange={(e) => settaIsEmpty(false)}
+                        onChange={(e) => settaIsEmpty(!!(e.target.value))}
                         placeholder="Hello world"
                         name="text"
                     />
@@ -47,7 +44,7 @@ export default function Form() {
                 <Flex>
                     <Label>Content</Label>
                     <Textarea
-                        onChange={(e) => settfIsEmpty(false)}
+                        onChange={(e) => settfIsEmpty(!!(e.target.value))}
                         placeholder="Content Here"
                         name="text"
                     />
