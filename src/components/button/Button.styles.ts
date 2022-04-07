@@ -15,7 +15,13 @@ export const Solid = styled(Button)`
     color: #fff;
     background-color: #000;
     &:hover {
-        background-color: #85858585;
+        background-color: #858585;
+        color: #000;
+    }
+    &:disabled {
+        background-color: #d2d2cf;
+        cursor: not-allowed;
+        color: #fff;
     }
 `
 
@@ -24,6 +30,11 @@ export const Outlined = styled(Button)`
     background-color: #fff;
     &:hover {
         background-color: #000;
+        color: #fff;
+    }
+    &:disabled {
+        background-color: #d2d2cf;
+        cursor: not-allowed;
         color: #fff;
     }
 `

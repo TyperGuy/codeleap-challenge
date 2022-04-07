@@ -4,9 +4,9 @@ import { Solid, Outlined } from './Button.styles'
 
 const Button: React.FC<ButtonProps> = ({ button }) =>
     button.variant === 'outlined' ? (
-        <Outlined>{button.text}</Outlined>
+        <Outlined disabled={button.disabled}>{button.text}</Outlined>
     ) : (
-        <Solid>{button.text}</Solid>
+        <Solid disabled={button.disabled}>{button.text}</Solid>
     )
 
 export default Button
