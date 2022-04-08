@@ -16,6 +16,11 @@ const Home:React.FC =()=>
           <Form/>
         </div>
         <Post/>
+        <Post/>
+        <Post/>
+        <Post/>
+        <Post/>
+        <Post/>
     </div>
 
   </div>

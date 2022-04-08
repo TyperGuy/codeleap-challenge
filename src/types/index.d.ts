@@ -15,7 +15,8 @@ declare module 'customTypes' {
     type ButtonType = {
         text: string
         variant: string
-        disabled: boolean
+        disabled: boolean,
+        onClick: ()=>void
     }
 
     interface InputProps {

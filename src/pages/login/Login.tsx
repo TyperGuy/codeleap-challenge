@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import { FlexType, ButtonType } from 'customTypes'
+import {useNavigate} from 'react-router-dom'
 import { Container, LoginBox as Box } from '../../styles/Flex.styles'
 import Button from '../../components/button/Button'
 import { Label, InputField } from '../../styles/Input.styles'
@@ -21,13 +22,18 @@ const FlexChild: FlexType = {
 
 
 
+
 const LoginPage: React.FC = () => {
-    
-    const [disable,setisable] = useState(true)
+    const navegate = useNavigate();
+    const [disable,setisable] = useState(false);
+    function login(){
+        navegate('/home')
+    }
     const ButtonProps: ButtonType = {
         text: 'Enter',
         variant: '',
         disabled: !disable,
+        onClick:login
     }
     return(
         <Container {...FlexProps}>

@@ -18,13 +18,18 @@ const FlexProps: FlexType = {
 }
 
 export default function Form() {
-    const [taIsEmpty, settaIsEmpty] = useState(true)
-    const [tfIsEmpty, settfIsEmpty] = useState(true)
+    const [taIsEmpty, settaIsEmpty] = useState(false)
+    const [tfIsEmpty, settfIsEmpty] = useState(false)
+
+    function teste(){
+        console.log("foi")
+    }
 
     const ButtonProps: ButtonType = {
         text: 'Entrar',
         variant: '',
         disabled:!(taIsEmpty&&tfIsEmpty),
+        onClick: teste
     }
 
     
